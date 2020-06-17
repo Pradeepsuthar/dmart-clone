@@ -10,9 +10,64 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
 
     <title>Dmart</title>
+    <style>
+        .nav-scroller {
+  position: relative;
+  z-index: 2;
+  height: 2.75rem;
+  overflow-y: hidden;
+}
+
+.nav-scroller .nav {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  padding-bottom: 1rem;
+  margin-top: -1px;
+  overflow-x: auto;
+  text-align: center;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+}
+
+.nav-scroller .nav-link {
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+  font-size: .875rem;
+}
+
+.nav-scroller .nav::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE and Edge */
+.nav-scroller .nav {
+  -ms-overflow-style: none;
+}
+.category{
+    border-radius: 20px;
+}
+    </style>
 </head>
 
 <body>
+    <div class="card m-0 border-bottom py-2">
+        <div class="nav-scroller">
+            <nav class="nav d-flex justify-content-between p-2">
+              <a class="text-white bg-success category mx-2 py-1 px-3 text-uppercase" href="#"><small>ORganic grocery</small></a>
+              <a class="text-dark border category mx-2 py-1 px-3 text-uppercase" href="#"><small>ORganic grocery</small></a>
+              <a class="text-dark border category mx-2 py-1 px-3 text-uppercase" href="#"><small>ORganic grocery</small></a>
+              <a class="text-dark border category mx-2 py-1 px-3 text-uppercase" href="#"><small>ORganic grocery</small></a>
+              <a class="text-dark border category mx-2 py-1 px-3 text-uppercase" href="#"><small>ORganic grocery</small></a>
+              <a class="text-dark border category mx-2 py-1 px-3 text-uppercase" href="#"><small>ORganic grocery</small></a>
+              <a class="text-dark border category mx-2 py-1 px-3 text-uppercase" href="#"><small>ORganic grocery</small></a>
+              <a class="text-dark border category mx-2 py-1 px-3 text-uppercase" href="#"><small>ORganic grocery</small></a>
+              <a class="text-dark border category mx-2 py-1 px-3 text-uppercase" href="#"><small>ORganic grocery</small></a>
+              <a class="text-dark border category mx-2 py-1 px-3 text-uppercase" href="#"><small>ORganic grocery</small></a>
+            </nav>
+          </div>
+    </div>
 
     <section class="jumbotron jumbotron-fluid bg-transparent">
         <div class="container">
