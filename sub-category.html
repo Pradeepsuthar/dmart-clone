@@ -53,40 +53,88 @@
 </head>
 
 <body>
-    <!-- Start Navigation -->
-
-    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
-        <a class="navbar-brand" href="#">Navbar w/ text</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarText">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Features</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Pricing</a>
-            </li>
-          </ul>
-          <span class="navbar-text">
-            Navbar text with an inline element
-          </span>
-        </div>
-      </nav>
-
+    <!-- Start Navigation for Desktop view -->
+    <div class="d-none d-md-block d-lg-block d-xl-block sticky-top">
+        <nav class="navbar navbar-expand-sm navbar-light bg-white shadow">
+            <div class="container-fluid">
+                <a class="navbar-brand mr-5" href="#">
+                    <img src="https://img.dmart.in/images/rwd-mobile/misc/dmart-logo-2x.png" alt="Brand Logo"
+                        width="150px" height="40px">
+                </a>
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <form class="form-inline mr-auto">
+                        <input class="form-control rounded-0" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-success my-2 my-sm-0 rounded-0" type="submit">Search</button>
+                    </form>
+                    <span class="ml-auto">
+                        <ul class="navbar-nav">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#"><svg class="bi bi-geo text-danger" width="1em" height="1em"
+                                        viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11 4a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                                        <path d="M7.5 4h1v9a.5.5 0 0 1-1 0V4z" />
+                                        <path fill-rule="evenodd"
+                                            d="M6.489 12.095a.5.5 0 0 1-.383.594c-.565.123-1.003.292-1.286.472-.302.192-.32.321-.32.339 0 .013.005.085.146.21.14.124.372.26.701.382.655.246 1.593.408 2.653.408s1.998-.162 2.653-.408c.329-.123.56-.258.701-.382.14-.125.146-.197.146-.21 0-.018-.018-.147-.32-.339-.283-.18-.721-.35-1.286-.472a.5.5 0 1 1 .212-.977c.63.137 1.193.34 1.61.606.4.253.784.645.784 1.182 0 .402-.219.724-.483.958-.264.235-.618.423-1.013.57-.793.298-1.855.472-3.004.472s-2.21-.174-3.004-.471c-.395-.148-.749-.336-1.013-.571-.264-.234-.483-.556-.483-.958 0-.537.384-.929.783-1.182.418-.266.98-.47 1.611-.606a.5.5 0 0 1 .595.383z" />
+                                    </svg> Delivery To (400053)</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><svg class="bi bi-person-circle text-danger" width="1em"
+                                        height="1em" viewBox="0 0 16 16" fill="currentColor"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M13.468 12.37C12.758 11.226 11.195 10 8 10s-4.757 1.225-5.468 2.37A6.987 6.987 0 0 0 8 15a6.987 6.987 0 0 0 5.468-2.63z" />
+                                        <path fill-rule="evenodd" d="M8 9a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                                        <path fill-rule="evenodd"
+                                            d="M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1zM0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8z" />
+                                    </svg> Sign-in | Register</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><svg class="bi bi-cart3 text-danger" width="1em"
+                                        height="1em" viewBox="0 0 16 16" fill="currentColor"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd"
+                                            d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z" />
+                                    </svg> Cart</a>
+                            </li>
+                    </span>
+                </div>
+            </div>
+        </nav>
+        <nav class="navbar navbar-expand-sm navbar-dark bg-success py-0">
+            <div class="container">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link text-white" href="#">DMart Grocery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Value Packs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Umbrella</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Cookware & Serveware</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Home Appliances</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Kitchen Appliances</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
     <!-- End Navigation -->
 
     <!-- Start phone app view -->
     <!-- Start Categories -->
-    <div class="d-block d-xsm-none d-sm-none d-md-none d-lg-none d-xl-none sticky-top">
+    <div class="d-block  d-md-none d-lg-none d-xl-none sticky-top">
         <div class="card m-0 border-bottom py-2 rounded-0">
             <div class="nav-scroller">
                 <nav class="nav d-flex justify-content-between p-2">
-                    <a class="text-white bg-success category mx-2 py-1 px-3 text-uppercase" href="#"><small>All Cetagoryies</small></a>
+                    <a class="text-white bg-success category mx-2 py-1 px-3 text-uppercase" href="#"><small>All
+                            Cetagoryies</small></a>
                     <a class="text-dark border category mx-2 py-1 px-3 text-uppercase" href="#"><small>ORganic
                             grocery</small></a>
                     <a class="text-dark border category mx-2 py-1 px-3 text-uppercase" href="#"><small>ORganic
@@ -145,7 +193,7 @@
             <a href="products.html">
                 <div class="card rounded-0 m-0  py-2 border-bottom">
                     <div class="media">
-                        <img src="https://img.dmart.in/images/rwd/products/I/S/u/ISunflowerOil5LSNDYXX040220_5_P.jpg"
+                        <img src="https://img.dmart.in/images/rwd/products/I/S/u/ISunflowerOil1LSNDYXX040220_5_P.jpg"
                             class="img-fluid">
                         <div class="media-body p-0 w-100">
                             <a href="#" class="text-dark">Sunday Refined Sunflower Oil</a><br>
@@ -172,7 +220,7 @@
             <a href="products.html">
                 <div class="card rounded-0 m-0  py-2 border-bottom">
                     <div class="media">
-                        <img src="https://img.dmart.in/images/rwd/products/I/S/u/ISunflowerOil5LSNDYXX040220_5_P.jpg"
+                        <img src="https://img.dmart.in/images/rwd/products/K/S/U/KSUNFLOWEROIL1LSWAD3259XX40518_2_P.jpg"
                             class="img-fluid">
                         <div class="media-body p-0 w-100">
                             <a href="#" class="text-dark">Sunday Refined Sunflower Oil</a><br>
@@ -199,7 +247,61 @@
             <a href="products.html">
                 <div class="card rounded-0 m-0  py-2 border-bottom">
                     <div class="media">
-                        <img src="https://img.dmart.in/images/rwd/products/I/S/u/ISunflowerOil5LSNDYXX040220_5_P.jpg"
+                        <img src="https://img.dmart.in/images/rwd/products/I/B/l/IBlendedOils5ltrSFOL3355XX2001200300_5_P.jpg"
+                            class="img-fluid">
+                        <div class="media-body p-0 w-100">
+                            <a href="#" class="text-dark">Sunday Refined Sunflower Oil</a><br>
+                            <div class="float-left">
+                                <img src="https://infoseekershub.com/wp-content/uploads/2019/08/veg.jpg" alt="Veg"
+                                    width="15px" height="15px">
+                            </div>
+                            <div class="float-right pr-2 text-right">
+                                <p class="card-title text-muted my-0 py-0">MRP <strike>&#8377;725.00</strike></p>
+                                <p class="card-title text-success my-0 py-0"><strong>DMart &#8377;539.00</strong></p>
+                                <p class="card-title text-danger my-0 py-0">Save &#8377;7.00</p>
+                            </div>
+                            <div class="d-flex justify-content-between w-100 pt-2 pr-2">
+                                <select class="form-control form-control-sm w-50">
+                                    <option>1 Kg</option>
+                                    <option>5 Kg</option>
+                                </select>
+                                <button class="btn btn-sm btn-success w-100 ml-2">ADD TO CART</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="products.html">
+                <div class="card rounded-0 m-0  py-2 border-bottom">
+                    <div class="media">
+                        <img src="https://img.dmart.in/images/rwd/products/K/E/d/KEdibleOil15LFTN2725XX200517_1_P.jpg"
+                            class="img-fluid">
+                        <div class="media-body p-0 w-100">
+                            <a href="#" class="text-dark">Sunday Refined Sunflower Oil</a><br>
+                            <div class="float-left">
+                                <img src="https://infoseekershub.com/wp-content/uploads/2019/08/veg.jpg" alt="Veg"
+                                    width="15px" height="15px">
+                            </div>
+                            <div class="float-right pr-2 text-right">
+                                <p class="card-title text-muted my-0 py-0">MRP <strike>&#8377;725.00</strike></p>
+                                <p class="card-title text-success my-0 py-0"><strong>DMart &#8377;539.00</strong></p>
+                                <p class="card-title text-danger my-0 py-0">Save &#8377;7.00</p>
+                            </div>
+                            <div class="d-flex justify-content-between w-100 pt-2 pr-2">
+                                <select class="form-control form-control-sm w-50">
+                                    <option>1 Kg</option>
+                                    <option>5 Kg</option>
+                                </select>
+                                <button class="btn btn-sm btn-success w-100 ml-2">ADD TO CART</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="products.html">
+                <div class="card rounded-0 m-0  py-2 border-bottom">
+                    <div class="media">
+                        <img src="https://img.dmart.in/images/rwd/products/I/S/u/ISunflowerOil1LGMN3467XX290216_1_P.jpg"
                             class="img-fluid">
                         <div class="media-body p-0 w-100">
                             <a href="#" class="text-dark">Sunday Refined Sunflower Oil</a><br>
@@ -239,7 +341,7 @@
                     </div>
                     <div class="card-body">
                         <span><a href="#" class="badge badge-success rounded-0 shadow-sm mr-2 my-auto pt-1 pb-0 px-4">
-                                <h5>Primary</h5>
+                                <h5>All Cooking Oil Products</h5>
                             </a></span>
                     </div>
                 </div>
